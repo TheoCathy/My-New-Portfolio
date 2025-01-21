@@ -39,11 +39,6 @@ function Home() {
               Projects
             </Link>
           </li>
-          <li>
-            <a href="#contact" className="hover:text-purple-500">
-              Contact
-            </a>
-          </li>
         </ul>
       </nav>
 
