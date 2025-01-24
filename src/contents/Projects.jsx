@@ -5,6 +5,7 @@ import logoimg from "../assets/Images/IMG_2455-removebg-preview__1_-removebg-pre
 import img1 from "../assets/Images/Screenshot 2025-01-20 at 14.01.51.png";
 import img2 from "../assets/Images/IMG_8711.jpg";
 import img3 from "../assets/Images/Screenshot 2025-01-21 at 13.59.07.png";
+import img4 from "../assets/Images/PHP-and-MySQL.jpg";
 function Projects() {
   const projectList = [
     {
@@ -17,22 +18,35 @@ function Projects() {
     {
       title: "GEminent E-commerce Web App",
       description:
-        "A responsive e-commerce application developed using React, designed to facilitate daily user transactions and streamline order placement. The platform includes an integrated payment system directly connected to a banking institution for seamless and secure transactions.",
+        "A responsive e-commerce application developed using ReactJS and Tailwind, designed to facilitate daily user transactions and streamline order placement. The platform includes an integrated payment system directly connected to Paypal for seamless and secure transactions.",
       link: "https://tiidelab-main.vercel.app/",
       image: img2,
     },
     {
       title: "My Portfolio Site",
       description:
-        "A modern and interactive portfolio built with React, styled using Tailwind CSS and vanilla CSS, and powered by React Spring for smooth animations. This project demonstrates my ability to create responsive and visually appealing designs while effectively utilizing cutting-edge libraries and tools.",
-      link: "https://github.com/example/task-manager",
+        "A modern and interactive portfolio built with React, styled using Tailwind CSS and Vanilla CSS, and powered by React Spring for smooth animations. This project demonstrates my ability to create responsive and visually appealing designs while effectively utilizing cutting-edge libraries and tools.",
+      link: "https://github.com/TheoCathy/My-New-Portfolio",
       image: img3,
+    },
+    {
+      title: "Fashion Event Booking Site",
+      description:
+        "This fashion event website was my first dive into PHP and MySQL. The platform allows users to log in, register, and book tickets for events. It was built with PHP and MySQL, implementing CRUDE functionalities to manage user accounts and event bookings. The project helped me develop a strong foundation in backend technologies and database management.",
+      link: "https://github.com/TheoCathy/Style-Exhibit",
+      image: img4,
+    },
+    {
+      title: "Geminent E-commerce Web App Dashboard",
+      description:
+        "An admin dashboard for the Geminent E-commerce Web App, designed to provide a seamless experience for managing products, orders, and users. The dashboard was built using React and Tailwind CSS, with Backend in PHP and Oracle SQL and it includes features such as data collection, product management, and order tracking.",
+      link: "https://github.com/TheoCathy",
+      image: img2,
     },
   ];
 
   return (
-    <div className="font-sans text-gray-900 bg-gray-100 min-h-screen p-6">
-      {/* Navbar */}
+    <div className="font-sans text-gray-900 bg-indigo-50 min-h-screen p-6">
       <nav className="flex justify-between items-center p-6 bg-deep-green text-black">
         <div className="flex">
           <img src={logoimg} alt="logo" className="w-10" />
