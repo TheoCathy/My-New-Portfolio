@@ -9,6 +9,7 @@
   transform-style: preserve-3d;
   animation: animate 20s linear infinite;
 }
+
 @keyframes animate {
   0% {
     transform: perspective(1000px) rotateY(0deg);
@@ -36,9 +37,9 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   border: 2px solid white;
   border-radius: 18px;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -61,8 +62,6 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  /* padding-top: 5px; */
-  /* padding-bottom: 2px; */
 }
 
 .container {
@@ -70,11 +69,47 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 100%; */
   padding: 0.5rem;
   border-radius: 10px;
-  /* margin-top: auto; */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .box {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .box span {
+    transform: rotateY(calc(var(--i) * 45deg)) translate(300px);
+  }
+
+  .trailsText {
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .box span {
+    transform: rotateY(calc(var(--i) * 45deg)) translate(200px);
+  }
+
+  .trailsText {
+    font-size: 1.2em;
+    line-height: 1em;
+  }
+}
+
 /* Styles for project cards */
 .project-card {
   position: relative;

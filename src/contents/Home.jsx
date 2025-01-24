@@ -88,8 +88,8 @@ function Home() {
           collaborative environments, fostering positivity and creativity among
           teams, and take pride in my leadership abilities. Alongside my
           professional pursuits, I am deeply passionate about empowering the
-          next generation, particularly through mentoring and advocating for
-          greater representation of women in STEM fields.
+          next generation, particularly through mentoring, volunteering and
+          advocating for greater representation of women in STEM fields.
         </p>
         {/* <h2 className="text-3xl font-bold mb-4">Projects</h2> */}
         <p className="mt-10 text-lg text-center">
@@ -106,26 +106,28 @@ function Home() {
         <p className="text-xl text-center mb-4">
           Feel free to contact me. Let’s work together.
         </p>
-        <div className="flex justify-center space-x-4">
-          {/* Mail Button */}
+        <div className="flex flex-col sm:flex-row sm:justify-center sm:space-x-4 space-y-4 sm:space-y-0">
+          {/* Email Button */}
           <a
             href="mailto:theodoranneoma@gmail.com"
-            className="flex items-center px-6 py-3 bg-purple-500 text-white rounded-full shadow-lg hover:bg-purple-600 transition"
+            className="flex items-center justify-center px-6 py-3 bg-purple-500 text-white rounded-full shadow-lg hover:bg-purple-600 transition text-center"
           >
             <MdEmail className="w-5 h-5 mr-2" />
             Email Me
           </a>
 
           {/* Phone Button */}
-          <button className="flex items-center px-6 py-3 bg-purple-500 text-white rounded-full shadow-lg hover:bg-purple-600 transition">
+          <button className="flex items-center justify-center px-6 py-3 bg-purple-500 text-white rounded-full shadow-lg hover:bg-purple-600 transition text-center">
             <MdPhone className="w-5 h-5 mr-2" />
             Call Me +44 7424346916
           </button>
+
+          {/* LinkedIn Button */}
           <a
             href="https://www.linkedin.com/in/theodora-orji-698625116/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center px-6 py-3 bg-purple-500 text-white rounded-full shadow-lg hover:bg-purple-600 transition"
+            className="flex items-center justify-center px-6 py-3 bg-purple-500 text-white rounded-full shadow-lg hover:bg-purple-600 transition text-center"
           >
             <FaLinkedin className="w-5 h-5 mr-2" />
             LinkedIn

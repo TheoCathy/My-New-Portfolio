@@ -7,6 +7,7 @@ import img4 from "../assets/Images/IMG_0024.jpg";
 import img5 from "../assets/Images/WhatsApp Image 2025-01-20 at 10.26.27.jpeg";
 import img6 from "../assets/Images/WhatsApp Image 2025-01-21 at 13.48.03.jpeg";
 import img7 from "../assets/Images/theodora_passport.jpeg";
+import img8 from "../assets/Images/IMG_8711.jpg";
 
 function MyGallery() {
   return (
@@ -27,7 +28,7 @@ function MyGallery() {
         <img src={img5} alt="img 5" />
       </span>
       <span style={{ "--i": 6 }}>
-        <img src={img6} alt="img 6" />
+        <img src={img8} alt="img 6" />
       </span>
       <span style={{ "--i": 7 }}>
         <img src={img2} alt="img 7" />
