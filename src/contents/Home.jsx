@@ -6,7 +6,7 @@ import img2 from "../assets/Images/IMG_6358.jpg";
 import logoimg from "../assets/Images/IMG_2455-removebg-preview__1_-removebg-preview.png";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
-import ResumeButton from "./resume";
+import ResumeButton from "./Resume";
 import MyGallery from "./Gallery";
 import AppText from "./Text";
 import LandingText from "./Text";
@@ -122,7 +122,6 @@ function Home() {
             Call Me +44 7424346916
           </button>
 
-          {/* LinkedIn Button */}
           <a
             href="https://www.linkedin.com/in/theodora-orji-698625116/"
             target="_blank"
