@@ -75,3 +75,38 @@
   border-radius: 10px;
   /* margin-top: auto; */
 }
+/* Styles for project cards */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.project-card__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.676);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.project-card__overlay-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* Hover effect (optional) */
+.project-card:hover .project-card__image {
+  filter: brightness(0.5); /* Darken further on hover */
+}
