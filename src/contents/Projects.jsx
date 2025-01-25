@@ -7,6 +7,7 @@ import img1 from "../assets/Images/Screenshot 2025-01-20 at 14.01.51.png";
 import img2 from "../assets/Images/58516e36-2a1d-41bf-8203-d7a93b70c498.JPG";
 import img3 from "../assets/Images/Screenshot 2025-01-21 at 13.59.07.png";
 import img4 from "../assets/Images/PHP-and-MySQL.jpg";
+import img5 from "../assets/Images/sodokuImage.jpeg";
 function Projects() {
   const projectList = [
     {
@@ -48,6 +49,14 @@ function Projects() {
       link: "https://github.com/TheoCathy",
       image: img2,
       isLive: false,
+    },
+    {
+      title: "Soduku Game",
+      description:
+        "I developed a fully functional Sudoku game using Java, showcasing my introductory Java programming skills. The game features a simple, user-friendly UI that allows players to interact with the grid easily, based on difficulty level selected. All core Sudoku functionalities are implemented, including puzzle generation, number placement, and validation of the player's inputs. The project highlights my ability to design and develop logical game mechanics while maintaining an intuitive user interface.",
+      link: "https://github.com/TheoCathy/Sudoku-Game",
+      image: img5,
+      isLive: true,
     },
   ];
 
@@ -100,7 +109,7 @@ function Projects() {
                   <span
                     className={`text-white text-4xl font-bold transform rotate-12 ${styles["project-card__overlay-text"]}`}
                   >
-                    Coming Soon
+                    Launching Soon
                   </span>
                 </div>
               )}

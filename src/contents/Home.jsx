@@ -75,7 +75,7 @@ function Home() {
           TypeScript, and libraries like ReactJS, NextJS and React Native, I
           excel at performance optimization, cross-browser compatibility, and
           user-centered design as well as mobile App designs. While advancing my
-          expertise in backend frameworks such as Oracle SQL and PHP and JAVA, I
+          expertise in backend frameworks such as Oracle SQL, PHP and JAVA, I
           remain committed to staying at the forefront of industry trends.
         </p>
         <p className="text-lg max-w-3xl text-center mt-4">
