@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import styles from "./Gallery.module.css";
 import logoimg from "../assets/Images/IMG_2455-removebg-preview__1_-removebg-preview.png";
 import img1 from "../assets/Images/Screenshot 2025-01-20 at 14.01.51.png";
-import img2 from "../assets/Images/58516e36-2a1d-41bf-8203-d7a93b70c498.JPG";
+import img2 from "../assets/Images/MTC_ASSEMENT.png";
 import img3 from "../assets/Images/Screenshot 2025-01-21 at 13.59.07.png";
-import img4 from "../assets/Images/PHP-and-MySQL.jpg";
+import img4 from "../assets/Images/S.HI.NE.png";
 import img5 from "../assets/Images/sodokuImage.jpeg";
+import img6 from "../assets/Images/58516e36-2a1d-41bf-8203-d7a93b70c498.JPG";
 function Projects() {
   const projectList = [
     {
@@ -19,12 +20,13 @@ function Projects() {
       isLive: true,
     },
     {
-      title: "GEminent E-commerce Web App",
-      description:
-        "A responsive e-commerce application developed using ReactJS and Tailwind, designed to facilitate daily user transactions and streamline order placement. The platform includes an integrated payment system directly connected to Paypal for seamless and secure transactions.",
-      link: "https://tiidelab-main.vercel.app/",
+      title: "MTC Trial Assessment",
+      description: `This is a trial frontend assessment project designed by MTC and developed by Theodora. The purpose of this project is to demonstrate practical frontend development skills, including responsive design, navigation, and component reuse using modern frontend libraries and frameworks.
+
+`,
+      link: "https://mtc-accessment-trial-uzoy.vercel.app/",
       image: img2,
-      isLive: false,
+      isLive: true,
     },
     {
       title: "My Portfolio Site",
@@ -35,10 +37,10 @@ function Projects() {
       isLive: true,
     },
     {
-      title: "Fashion Event Booking Site",
+      title: "S.HI.NE Website",
       description:
-        "This fashion event website was my first dive into PHP and MySQL. The platform allows users to log in, register, and book tickets for events. It was built with PHP and MySQL, implementing CRUDE functionalities to manage user accounts and event bookings. The project helped me develop a strong foundation in backend technologies and database management.",
-      link: "https://github.com/TheoCathy/Style-Exhibit",
+        "This website is live and currently maintained by me as I am affiliated with the organization. It is a platform that showcases the organization's mission, vision, and activities. The website is built using ReactJS and Tailwind CSS, ensuring a modern and responsive design.",
+      link: "https://sistersshine.org/",
       image: img4,
       isLive: true,
     },
@@ -47,7 +49,7 @@ function Projects() {
       description:
         "An admin dashboard for GEminent E-commerce Web App, designed to provide a seamless experience for managing products, orders, and users. The dashboard was built using React and Tailwind CSS, with Backend in PHP and Oracle SQL and it includes features such as data collection, product management, and order tracking.",
       link: "https://github.com/TheoCathy",
-      image: img2,
+      image: img6,
       isLive: false,
     },
     {
@@ -63,21 +65,32 @@ function Projects() {
   return (
     <>
       {/* return ( */}
-      <div className="font-sans text-gray-900 bg-indigo-50 min-h-screen p-6">
+      <div
+        className="font-serif text-gray-900 bg-indigo-50 min-h-screen p-6"
+        style={{
+          background:
+            // "linear-gradient(135deg,rgb(68, 52, 22) 25%, transparent 25%), linear-gradient(225deg,rgb(54, 50, 4) 25%, transparent 25%), linear-gradient(315deg,rgb(37, 20, 8) 25%,rgba(75, 52, 2, 0.68) 25%)",
+            "linear-gradient(135deg, rgb(96, 72, 130) 25%, transparent 25%), linear-gradient(225deg, rgb(88, 100, 88) 25%, transparent 25%),linear-gradient(315deg, rgba(68, 52, 112, 0.7) 25%, rgba(120, 130, 115, 0.6) 25%)",
+          backgroundPosition: "10px 0, 10px 0, 2 0, 0 0",
+        }}
+      >
         {/* Navbar */}
-        <nav className="flex justify-between items-center p-6 bg-deep-green text-black">
+        <nav className="flex justify-between items-center p-6 bg-deep-green text-gray-100">
           <div className="flex items-center">
             <img src={logoimg} alt="logo" className="w-10" />
             <p className="font-bold text-3xl p-1">Theo</p>
           </div>
           <ul className="flex space-x-6 text-lg">
             <li>
-              <Link to="/" className="hover:text-purple-500">
+              <Link to="/" className=" text-gray-100 hover:text-purple-500">
                 Home
               </Link>
             </li>
             <li>
-              <a href="#projects" className="hover:text-purple-500">
+              <a
+                href="#projects"
+                className=" text-gray-100 hover:text-purple-500"
+              >
                 Projects
               </a>
             </li>
@@ -85,7 +98,7 @@ function Projects() {
         </nav>
 
         {/* Projects Section */}
-        <h1 className="text-4xl font-bold text-center mb-6 text-purple-700">
+        <h1 className="text-4xl font-bold text-center mb-6 text-purple-950">
           My Projects
         </h1>
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

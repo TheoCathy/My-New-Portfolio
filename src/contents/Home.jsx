@@ -15,9 +15,9 @@ function Home() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="font-sans text-gray-900 bg-fuchsia-50">
+    <div className="font-serif bg-gradient-to-r from-purple-900 via-green-950 to-teal-950  ">
       {/* Navbar */}
-      <nav className="flex justify-around items-center p-6 bg-deep-green text-black">
+      <nav className="flex justify-around items-center p-6 bg-deep-green text-gray-200">
         <div className="flex">
           <img src={logoimg} alt="logo" className="w-10" />
           <p className="font-bold text-3xl p-1">Theo</p>
@@ -41,6 +41,7 @@ function Home() {
           </li>
         </ul>
       </nav>
+      <div className="w-full md:w-2/3 mx-auto border-t border-gray-400 mt-1 mb-3 "></div>
 
       {/* Home Section */}
       <section
@@ -65,7 +66,13 @@ function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="min-h-screen flex flex-col justify-center items-center bg-deep-green text-black p-6 bg-gray-200"
+        className="min-h-screen flex flex-col justify-center items-center bg-deep-green text-neutral-950 p-6 bg-gray-200"
+        style={{
+          background:
+            "linear-gradient(135deg, rgb(96, 72, 120) 15%, transparent 10%), linear-gradient(35deg, rgb(88, 100, 88) 15%, transparent 25%), linear-gradient(225deg, rgb(88, 100, 88) 5%, transparent 15%),linear-gradient(325deg, rgba(68, 52, 112, 0.7) 15%, rgba(255, 255, 255, 0.7) 5%)",
+
+          backgroundPosition: "10px 0, 10px 0, 2 0, 0 0",
+        }}
       >
         <h2 className="text-3xl font-bold mb-4">About Me</h2>
         <p className="text-lg max-w-3xl text-center">
@@ -135,7 +142,10 @@ function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-deep-green text-center text-black bg-gray-200 py-2">
+      <footer
+        className="bg-deep-green text-center text-gray-50  bg-rgb(51, 50, 92) py-2"
+        style={{ background: " rgb(51, 50, 92), rgb(88, 99, 88)" }}
+      >
         <p className="text-xs">
           All rights reserved. Designed by Theodora <br></br>© {currentYear}
         </p>

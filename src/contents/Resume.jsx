@@ -18,9 +18,6 @@ function ResumeButton() {
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          {/* <div className="bg-red-300 rounded-lg shadow-lg p-6 w-11/12 max-w-3xl relative"> */}
-
-          {/* <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"> */}
           <div className="bg-white rounded-lg shadow-lg w-full max-w-7xl h-[90vh] relative p-6">
             <button
               onClick={closeModal}
@@ -30,7 +27,7 @@ function ResumeButton() {
             </button>
             <h2 className="text-2xl font-bold mb-4">My Resume</h2>
             <iframe
-              src="/Theodora_O._Resume.pdf"
+              src="/Theodora.O_Resume_.pdf"
               className="w-full h-[80vh]"
               title="Resume"
             ></iframe>
