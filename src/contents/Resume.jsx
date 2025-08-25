@@ -27,7 +27,7 @@ function ResumeButton() {
             </button>
             <h2 className="text-2xl font-bold mb-4">My Resume</h2>
             <iframe
-              src="/Theodora.O_Resume_.pdf"
+              src="/Theodora_Orji_Resume.pdf"
               className="w-full h-[80vh]"
               title="Resume"
             ></iframe>

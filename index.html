@@ -14,5 +14,17 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      (function () {
+        const script = document.createElement("script");
+        script.src = "https://talkweb.io/widget.js";
+        script.setAttribute(
+          "data-assistant",
+          "ae237428-59e2-4a05-8cdd-42b7071dd54c"
+        );
+        script.setAttribute("data-base-url", "https://talkweb.io");
+        document.head.appendChild(script);
+      })();
+    </script>
   </body>
 </html>
