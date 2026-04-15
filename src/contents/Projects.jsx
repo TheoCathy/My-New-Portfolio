@@ -9,6 +9,9 @@ import img3 from "../assets/Images/Screenshot 2025-01-21 at 13.59.07.png";
 import img4 from "../assets/Images/S.HI.NE.png";
 import img5 from "../assets/Images/sodokuImage.jpeg";
 import img6 from "../assets/Images/58516e36-2a1d-41bf-8203-d7a93b70c498.JPG";
+import img7 from "../assets/Images/MbenScreenshot.png";
+import { FaExternalLinkAlt, FaGithub, FaRocket } from "react-icons/fa";
+
 function Projects() {
   const projectList = [
     {
@@ -18,142 +21,222 @@ function Projects() {
       link: "https://www.callphoneng.com/",
       image: img1,
       isLive: true,
+      tags: ["React", "Tailwind CSS", "Corporate"],
+    },
+   
+    {
+      title: "S.HI.NE Website",
+      description:
+        "This website is live and currently maintained by me as I am affiliated with the organization. It is a platform that showcases the organization's mission, vision, and activities, built using ReactJS and Tailwind CSS.",
+      link: "https://sistersshine.org/",
+      image: img4,
+      isLive: true,
+      tags: ["React", "Tailwind CSS", "Non-Profit"],
     },
     {
+      title: "Mben Health Project",
+      description:
+        "A health-focused digital platform designed to improve access to health information and services. Built with a user-centered approach, the application provides intuitive interfaces for health management and wellness tracking.",
+      link: "https://mbenhealthservices.com/",
+      image: img7,
+      isLive: true,
+      tags: ["Health Tech", "React", "User-Centered Design"],
+    },
+    {
+      title: "TekkAI",
+      description:
+        "An admin dashboard for GEminent E-commerce Web App, designed to provide a seamless experience for managing products, orders, and users. Built using React and Tailwind CSS, with Backend in PHP and Oracle SQL.",
+      link: "https://github.com/TheoCathy",
+      image: img6,
+      isLive: false,
+      tags: ["React", "PHP", "Oracle SQL", "E-commerce"],
+    },
+     {
       title: "MTC Trial Assessment",
-      description: `This is a trial frontend assessment project designed by MTC and developed by Theodora. The purpose of this project is to demonstrate practical frontend development skills, including responsive design, navigation, and component reuse using modern frontend libraries and frameworks.
-
-`,
+      description:
+        "A trial frontend assessment project designed by MTC and developed by Theodora, demonstrating practical frontend development skills, including responsive design, navigation, and component reuse using modern frontend libraries and frameworks.",
       link: "https://mtc-accessment-trial-uzoy.vercel.app/",
       image: img2,
       isLive: true,
+      tags: ["React", "Frontend", "Assessment"],
     },
     {
       title: "My Portfolio Site",
       description:
-        "A modern and interactive portfolio built with React, styled using Tailwind CSS and Vanilla CSS, and powered by React Spring for smooth animations. This project demonstrates my ability to create responsive and visually appealing designs while effectively utilizing cutting-edge libraries and tools.",
+        "A modern and interactive portfolio built with React, styled using Tailwind CSS and Vanilla CSS, and powered by React Spring for smooth animations. This project demonstrates my ability to create responsive and visually appealing designs.",
       link: "https://github.com/TheoCathy/My-New-Portfolio",
       image: img3,
       isLive: true,
+      tags: ["React", "Tailwind CSS", "React Spring"],
     },
     {
-      title: "S.HI.NE Website",
+      title: "Sudoku Game",
       description:
-        "This website is live and currently maintained by me as I am affiliated with the organization. It is a platform that showcases the organization's mission, vision, and activities. The website is built using ReactJS and Tailwind CSS, ensuring a modern and responsive design.",
-      link: "https://sistersshine.org/",
-      image: img4,
-      isLive: true,
-    },
-    {
-      title: "GEminent E-commerce Web App Dashboard",
-      description:
-        "An admin dashboard for GEminent E-commerce Web App, designed to provide a seamless experience for managing products, orders, and users. The dashboard was built using React and Tailwind CSS, with Backend in PHP and Oracle SQL and it includes features such as data collection, product management, and order tracking.",
-      link: "https://github.com/TheoCathy",
-      image: img6,
-      isLive: false,
-    },
-    {
-      title: "Soduku Game",
-      description:
-        "I developed a fully functional Sudoku game using Java, showcasing my introductory Java programming skills. The game features a simple, user-friendly UI that allows players to interact with the grid easily, based on difficulty level selected. All core Sudoku functionalities are implemented, including puzzle generation, number placement, and validation of the player's inputs. The project highlights my ability to design and develop logical game mechanics while maintaining an intuitive user interface.",
+        "A fully functional Sudoku game using Java, featuring a user-friendly UI that allows players to interact with the grid easily based on difficulty level. Includes puzzle generation, number placement, and input validation.",
       link: "https://github.com/TheoCathy/Sudoku-Game",
       image: img5,
       isLive: true,
+      tags: ["Java", "Game Dev", "Logic"],
+    },
+    
+    {
+      title: "Horeb Project",
+      description:
+        "A community-driven web application developed for the Horeb organisation, enabling better digital engagement and outreach. The project focuses on clean design, accessibility, and responsive user experience.",
+      link: "#",
+      image: null,
+      isLive: false,
+      tags: ["React", "Community", "Web App"],
+    },
+    {
+      title: "JetShine Project",
+      description:
+        "A service-oriented web platform built to streamline business operations and client interactions. JetShine features modern UI design, seamless navigation, and an emphasis on performance and scalability.",
+      link: "#",
+      image: null,
+      isLive: false,
+      tags: ["React", "Business", "Scalable"],
     },
   ];
 
   return (
-    <>
-      {/* return ( */}
-      <div
-        className="font-serif text-gray-900 bg-indigo-50 min-h-screen p-6"
-        style={{
-          background:
-            // "linear-gradient(135deg,rgb(68, 52, 22) 25%, transparent 25%), linear-gradient(225deg,rgb(54, 50, 4) 25%, transparent 25%), linear-gradient(315deg,rgb(37, 20, 8) 25%,rgba(75, 52, 2, 0.68) 25%)",
-            "linear-gradient(135deg, rgb(96, 72, 130) 25%, transparent 25%), linear-gradient(225deg, rgb(88, 100, 88) 25%, transparent 25%),linear-gradient(315deg, rgba(68, 52, 112, 0.7) 25%, rgba(120, 130, 115, 0.6) 25%)",
-          backgroundPosition: "10px 0, 10px 0, 2 0, 0 0",
-        }}
-      >
-        {/* Navbar */}
-        <nav className="flex justify-between items-center p-6 bg-deep-green text-gray-100">
-          <div className="flex items-center">
+    <div className="font-serif text-gray-900 bg-gray-50 min-h-screen">
+      {/* Navbar */}
+      <nav className="sticky top-0 z-50 backdrop-blur-md bg-purple-950/80 border-b border-purple-800/40">
+        <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+          <div className="flex items-center gap-2">
             <img src={logoimg} alt="logo" className="w-10" />
-            <p className="font-bold text-3xl p-1">Theo</p>
+            <p className="font-bold text-3xl text-gray-100">Theo</p>
           </div>
-          <ul className="flex space-x-6 text-lg">
+          <ul className="flex space-x-8 text-lg text-gray-200">
             <li>
-              <Link to="/" className=" text-gray-100 hover:text-purple-500">
+              <Link to="/" className="hover:text-purple-400 transition">
                 Home
               </Link>
             </li>
             <li>
-              <a
-                href="#projects"
-                className=" text-gray-100 hover:text-purple-500"
-              >
+              <a href="#projects" className="hover:text-purple-400 transition">
                 Projects
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
+      </nav>
 
-        {/* Projects Section */}
-        <h1 className="text-4xl font-bold text-center mb-6 text-purple-950">
-          My Projects
-        </h1>
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {/* Hero Header */}
+      <div className="bg-gradient-to-br from-purple-950 via-green-950 to-teal-950 py-16 px-6 text-center">
+        <h1 className="text-5xl font-bold text-white mb-3">My Projects</h1>
+        <div className="w-20 h-1 bg-purple-400 mx-auto mb-4 rounded-full"></div>
+        <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          A collection of projects that showcase my technical skills, creativity,
+          and commitment to building impactful digital solutions.
+        </p>
+      </div>
+
+      {/* Projects Grid */}
+      <section id="projects" className="max-w-6xl mx-auto px-6 py-16">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projectList.map((project, index) => (
             <div
               key={index}
-              className={`relative bg-white shadow-lg rounded-lg p-6 ${styles["project-card"]}`}
+              className={`relative group bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl hover:scale-[1.03] transition-all duration-300 ease-out flex flex-col ${styles["project-card"]}`}
             >
               {/* Project Image */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className={`w-full h-48 object-cover rounded-t-lg mb-4 `}
-              />
+              {project.image ? (
+                <div className="relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  {/* Gradient overlay on image */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </div>
+              ) : (
+                <div className="w-full h-52 bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center">
+                  <div className="text-center text-purple-400">
+                    <FaRocket className="w-10 h-10 mx-auto mb-2 opacity-50" />
+                    <p className="text-sm font-medium opacity-60">
+                      Image Coming Soon
+                    </p>
+                  </div>
+                </div>
+              )}
 
               {/* Overlay for non-live projects */}
               {!project.isLive && (
                 <div
-                  className={`absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg ${styles["project-card__overlay"]}`}
+                  className={`absolute inset-0 flex items-center justify-center bg-black/50 rounded-2xl z-10 ${styles["project-card__overlay"]}`}
                 >
                   <span
-                    className={`text-white text-4xl font-bold transform rotate-12 ${styles["project-card__overlay-text"]}`}
+                    className={`text-white text-2xl font-bold transform -rotate-12 uppercase tracking-wider bg-purple-600/80 px-4 py-2 rounded-lg ${styles["project-card__overlay-text"]}`}
                   >
                     Launching Soon
                   </span>
                 </div>
               )}
 
-              {/* Project Title */}
-              <h2 className="text-2xl font-bold text-deep-green mb-2">
-                {project.title}
-              </h2>
+              {/* Card Body */}
+              <div className="p-6 flex flex-col flex-grow">
+                {/* Tags */}
+                <div className="flex flex-wrap gap-1.5 mb-3">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2 py-0.5 bg-purple-50 text-purple-600 text-xs font-medium rounded-full border border-purple-100"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
 
-              {/* Project Description */}
-              <p className="text-gray-700 mb-4">{project.description}</p>
+                {/* Project Title */}
+                <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-700 transition-colors">
+                  {project.title}
+                </h2>
 
-              {/* Project Link */}
-              {project.isLive ? (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-purple-500 hover:underline"
-                >
-                  View Project
-                </a>
-              ) : (
-                <p className="text-gray-500 italic">Coming Soon</p>
-              )}
+                {/* Project Description */}
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                  {project.description}
+                </p>
+
+                {/* Project Link */}
+                {project.isLive ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-purple-600 font-semibold text-sm hover:text-purple-800 transition-colors group/link"
+                  >
+                    <FaExternalLinkAlt className="w-3.5 h-3.5" />
+                    View Project
+                    <span className="inline-block transition-transform group-hover/link:translate-x-1">
+                      →
+                    </span>
+                  </a>
+                ) : (
+                  <p className="inline-flex items-center gap-2 text-gray-400 font-medium text-sm italic">
+                    <FaGithub className="w-3.5 h-3.5" />
+                    Coming Soon
+                  </p>
+                )}
+              </div>
             </div>
           ))}
         </div>
-      </div>
-    </>
-    // </div>
+      </section>
+
+      {/* Footer */}
+      <footer
+        className="text-center text-gray-50 py-4"
+        style={{ background: "rgb(51, 50, 92)" }}
+      >
+        <p className="text-xs">
+          All rights reserved. Designed by Theodora <br />©{" "}
+          {new Date().getFullYear()}
+        </p>
+      </footer>
+    </div>
   );
 }
 

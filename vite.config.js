@@ -12,6 +12,7 @@ export default defineConfig({
     "**/*.png",
     "**/*.gif",
     "**/*.svg",
+    "**/*.PNG",
     "**/*.webp",
   ],
 });

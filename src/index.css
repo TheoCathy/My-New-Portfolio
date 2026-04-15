@@ -4,5 +4,25 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll offset for sticky nav */
+section[id] {
+  scroll-margin-top: 70px;
+}
+
+/* Custom summary marker removal for mobile nav */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Backdrop blur fallback */
+@supports not (backdrop-filter: blur(12px)) {
+  nav {
+    background: rgba(46, 16, 101, 0.95) !important;
+  }
 }
