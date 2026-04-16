@@ -12,6 +12,7 @@ import {
   FaHeart,
   FaChild,
   FaLaptopCode,
+  FaExternalLinkAlt 
 } from "react-icons/fa";
 import ResumeButton from "./Resume";
 import MyGallery from "./Gallery";
@@ -261,8 +262,9 @@ function Home() {
           <div className="w-20 h-1 bg-purple-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-neutral-800 mb-4 leading-relaxed">
             My portfolio includes a variety of projects that demonstrate both
-            technical depth and practical application. These projects reflect my
-            ability to design, develop, and deploy solutions that solve
+            technical depth and practical application. Some of these projects I worked on independently and some with a team, reflecting my
+            ability to collaborate effectively and adapt to different project requirements. These experiences highlight my product architecture
+            design skills, as well as my ability to develop and deploy solutions that solve
             real-world problems.
           </p>
           <Link
@@ -302,6 +304,15 @@ function Home() {
                 emerging technologies. These experiences allow me to connect with
                 diverse audiences and promote inclusive innovation.
               </p>
+              <a
+                href="https://www.youtube.com/watch?v=k0q8J8bFVTA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-purple-300 hover:text-purple-100 font-semibold mb-4 transition-colors"
+              >
+                <FaExternalLinkAlt className="text-sm" />
+                Watch one of my session here
+              </a>
               <div className="w-full h-56 rounded-xl overflow-hidden border border-purple-600/30 bg-purple-900/20">
                 <img src={speakingImg} alt="Speaking engagement" className="w-full h-full object-contain" />
               </div>

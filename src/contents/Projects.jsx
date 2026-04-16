@@ -10,20 +10,22 @@ import img4 from "../assets/Images/S.HI.NE.png";
 import img5 from "../assets/Images/sodokuImage.jpeg";
 import img6 from "../assets/Images/58516e36-2a1d-41bf-8203-d7a93b70c498.JPG";
 import img7 from "../assets/Images/MbenScreenshot.png";
+import img8 from "../assets/Images/TekkAISnap.png";
+import img9 from "../assets/Images/JetandShineSnap.png";
 import { FaExternalLinkAlt, FaGithub, FaRocket } from "react-icons/fa";
 
 function Projects() {
   const projectList = [
-    {
-      title: "Callphone LTD Website",
-      description:
-        "I developed a corporate website for Callphone LTD. My role included designing and implementing the website's front-end using ReactJS and Tailwind, ensuring cross-browser compatibility, and optimizing performance.",
-      link: "https://www.callphoneng.com/",
-      image: img1,
-      isLive: true,
-      tags: ["React", "Tailwind CSS", "Corporate"],
-    },
    
+   {
+      title: "TekkAI",
+      description:
+      "An AI-powered product development platform that helps founders and product managers transform raw ideas into structured, investor-ready documentation. Built with React, TypeScript, and OpenAI API, the platform generates PRDs, FRDs, and visual HTML mockups from a single idea prompt. It also features a multi-stage Growth Planner that uses business context to deliver tailored growth strategies, a community hub, and a product health checklist tool  all wrapped in a responsive, modern interface.",
+      link: "https://tekkdoseai.netlify.app/",
+      image: img8,
+      isLive: true,
+      tags: ["React", "LLM", "Community", "AI App"],
+    },
     {
       title: "S.HI.NE Website",
       description:
@@ -34,7 +36,16 @@ function Projects() {
       tags: ["React", "Tailwind CSS", "Non-Profit"],
     },
     {
-      title: "Mben Health Project",
+      title: "Jet and Shine Website",
+      description:
+        "A service-oriented web platform built to streamline business operations and client interactions. Jet and Shine features modern UI design, seamless navigation, WordPress headless CMS integration for Blog management, and an emphasis on performance and scalability of a cleaning company based in Bristol.",
+      link: "https://jetandshinebristol.co.uk/",
+      image: img9,
+      isLive: true,
+      tags: ["React", "Business", "Scalable", "Wordpress headless CMS"],
+    },
+    {
+      title: "Mben Health Services Website",
       description:
         "A health-focused digital platform designed to improve access to health information and services. Built with a user-centered approach, the application provides intuitive interfaces for health management and wellness tracking.",
       link: "https://mbenhealthservices.com/",
@@ -42,8 +53,18 @@ function Projects() {
       isLive: true,
       tags: ["Health Tech", "React", "User-Centered Design"],
     },
+     
+     {
+      title: "Callphone LTD Website",
+      description:
+        "I developed a corporate website for Callphone LTD. My role included designing and implementing the website's front-end using ReactJS and Tailwind, ensuring cross-browser compatibility, and optimizing performance.",
+      link: "https://www.callphoneng.com/",
+      image: img1,
+      isLive: true,
+      tags: ["React", "Tailwind CSS", "Corporate"],
+    },
     {
-      title: "TekkAI",
+      title: "Geminent",
       description:
         "An admin dashboard for GEminent E-commerce Web App, designed to provide a seamless experience for managing products, orders, and users. Built using React and Tailwind CSS, with Backend in PHP and Oracle SQL.",
       link: "https://github.com/TheoCathy",
@@ -79,24 +100,16 @@ function Projects() {
       tags: ["Java", "Game Dev", "Logic"],
     },
     
-    {
-      title: "Horeb Project",
-      description:
-        "A community-driven web application developed for the Horeb organisation, enabling better digital engagement and outreach. The project focuses on clean design, accessibility, and responsive user experience.",
-      link: "#",
-      image: null,
-      isLive: false,
-      tags: ["React", "Community", "Web App"],
-    },
-    {
-      title: "JetShine Project",
-      description:
-        "A service-oriented web platform built to streamline business operations and client interactions. JetShine features modern UI design, seamless navigation, and an emphasis on performance and scalability.",
-      link: "#",
-      image: null,
-      isLive: false,
-      tags: ["React", "Business", "Scalable"],
-    },
+    // {
+    //   title: "Horeb Project",
+    //   description:
+    //     "A community-driven web application developed for the Horeb organisation, enabling better digital engagement and outreach. The project focuses on clean design, accessibility, and responsive user experience.",
+    //   link: "#",
+    //   image: null,
+    //   isLive: false,
+    //   tags: ["React", "Community", "Web App"],
+    // },
+   
   ];
 
   return (
