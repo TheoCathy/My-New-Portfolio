@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Gallery.module.css";
 import logoimg from "../assets/Images/IMG_2455-removebg-preview__1_-removebg-preview.png";
@@ -12,9 +12,14 @@ import img6 from "../assets/Images/58516e36-2a1d-41bf-8203-d7a93b70c498.JPG";
 import img7 from "../assets/Images/MbenScreenshot.png";
 import img8 from "../assets/Images/TekkAISnap.png";
 import img9 from "../assets/Images/JetandShineSnap.png";
+import img10 from "../assets/Images/elvateImg.png";
+import img11 from "../assets/Images/Peacewatch.png";
 import { FaExternalLinkAlt, FaGithub, FaRocket } from "react-icons/fa";
 
 function Projects() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, []);
   const projectList = [
    
    {
@@ -57,9 +62,27 @@ function Projects() {
      {
       title: "Callphone LTD Website",
       description:
-        "I developed a corporate website for Callphone LTD. My role included designing and implementing the website's front-end using ReactJS and Tailwind, ensuring cross-browser compatibility, and optimizing performance.",
+        "A corporate website for Callphone LTD. My role included designing and implementing the website's front-end using ReactJS and Tailwind, ensuring cross-browser compatibility, and optimizing performance.",
       link: "https://www.callphoneng.com/",
       image: img1,
+      isLive: true,
+      tags: ["React", "Tailwind CSS", "Corporate"],
+    },
+     {
+      title: "Elev8Afrik",
+      description:
+        "Developed a corporate website for Elev8Afrik, focusing on African educational and entertainment content distribution in African languages for African adults, both on the continent and in the diaspora.",
+      link: "https://www.elv8afrik.africa/",
+      image: img10,
+      isLive: true,
+      tags: ["React", "Tailwind CSS", "Corporate"],
+    },
+     {
+      title: "PeaceWatchers",
+      description:
+        "A corporate website for PeaceWatch, Peacewatch Tactical Nigeria Limited is Nigeria's first protection culture institution — training worship communities to protect themselves from within.",
+      link: "http://peacewatch.ng/",
+      image: img11,
       isLive: true,
       tags: ["React", "Tailwind CSS", "Corporate"],
     },
@@ -115,7 +138,7 @@ function Projects() {
   return (
     <div className="font-serif text-gray-900 bg-gray-50 min-h-screen">
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 backdrop-blur-md bg-purple-950/80 border-b border-purple-800/40">
+      <nav className="sticky top-0 z-50 backdrop-blur-md bg-obsidian-950/80 border-b border-obsidian-800/40">
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
           <div className="flex items-center gap-2">
             <img src={logoimg} alt="logo" className="w-10" />
@@ -123,12 +146,12 @@ function Projects() {
           </div>
           <ul className="flex space-x-8 text-lg text-gray-200">
             <li>
-              <Link to="/" className="hover:text-purple-400 transition">
+              <Link to="/" className="hover:text-obsidian-400 transition">
                 Home
               </Link>
             </li>
             <li>
-              <a href="#projects" className="hover:text-purple-400 transition">
+              <a href="#projects" className="hover:text-obsidian-400 transition">
                 Projects
               </a>
             </li>
@@ -137,9 +160,9 @@ function Projects() {
       </nav>
 
       {/* Hero Header */}
-      <div className="bg-gradient-to-br from-purple-950 via-green-950 to-teal-950 py-16 px-6 text-center">
+      <div className="bg-gradient-to-br from-gray-900 via-obsidian-900 to-gray-950 py-16 px-6 text-center">
         <h1 className="text-5xl font-bold text-white mb-3">My Projects</h1>
-        <div className="w-20 h-1 bg-purple-400 mx-auto mb-4 rounded-full"></div>
+        <div className="w-20 h-1 bg-obsidian-400 mx-auto mb-4 rounded-full"></div>
         <p className="text-gray-300 text-lg max-w-2xl mx-auto">
           A collection of projects that showcase my technical skills, creativity,
           and commitment to building impactful digital solutions.
@@ -166,8 +189,8 @@ function Projects() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
               ) : (
-                <div className="w-full h-52 bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center">
-                  <div className="text-center text-purple-400">
+                <div className="w-full h-52 bg-gradient-to-br from-obsidian-100 to-obsidian-50 flex items-center justify-center">
+                  <div className="text-center text-obsidian-400">
                     <FaRocket className="w-10 h-10 mx-auto mb-2 opacity-50" />
                     <p className="text-sm font-medium opacity-60">
                       Image Coming Soon
@@ -182,7 +205,7 @@ function Projects() {
                   className={`absolute inset-0 flex items-center justify-center bg-black/50 rounded-2xl z-10 ${styles["project-card__overlay"]}`}
                 >
                   <span
-                    className={`text-white text-2xl font-bold transform -rotate-12 uppercase tracking-wider bg-purple-600/80 px-4 py-2 rounded-lg ${styles["project-card__overlay-text"]}`}
+                    className={`text-white text-2xl font-bold transform -rotate-12 uppercase tracking-wider bg-obsidian-600/80 px-4 py-2 rounded-lg ${styles["project-card__overlay-text"]}`}
                   >
                     Launching Soon
                   </span>
@@ -196,7 +219,7 @@ function Projects() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-0.5 bg-purple-50 text-purple-600 text-xs font-medium rounded-full border border-purple-100"
+                      className="px-2 py-0.5 bg-obsidian-50 text-obsidian-700 text-xs font-medium rounded-full border border-dark"
                     >
                       {tag}
                     </span>
@@ -204,7 +227,7 @@ function Projects() {
                 </div>
 
                 {/* Project Title */}
-                <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-700 transition-colors">
+                <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-obsidian-700 transition-colors">
                   {project.title}
                 </h2>
 
@@ -219,7 +242,7 @@ function Projects() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-purple-600 font-semibold text-sm hover:text-purple-800 transition-colors group/link"
+                    className="inline-flex items-center gap-2 text-obsidian-600 font-semibold text-sm hover:text-obsidian-800 transition-colors group/link"
                   >
                     <FaExternalLinkAlt className="w-3.5 h-3.5" />
                     View Project
@@ -241,8 +264,7 @@ function Projects() {
 
       {/* Footer */}
       <footer
-        className="text-center text-gray-50 py-4"
-        style={{ background: "rgb(51, 50, 92)" }}
+        className="text-center text-gray-50 py-4 bg-gray-900"
       >
         <p className="text-xs">
           All rights reserved. Designed by Theodora <br />©{" "}

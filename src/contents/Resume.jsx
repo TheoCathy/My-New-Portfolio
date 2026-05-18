@@ -10,7 +10,7 @@ function ResumeButton() {
     <div>
       <button
         onClick={openModal}
-        className="px-6 py-3 bg-purple-500 text-white text-center items-center rounded-full shadow-lg hover:bg-purple-600 transition"
+        className="px-6 py-3 bg-dark text-white text-center items-center rounded-full shadow-lg hover:bg-dark/90 transition"
       >
         Click to view resume
       </button>
