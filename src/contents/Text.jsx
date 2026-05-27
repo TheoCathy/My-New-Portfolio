@@ -54,7 +54,7 @@ export default function LandingText() {
   return (
     <div className={styles.container} ref={containerRef}>
       <Trail open={open}>
-        <h1 className="my-10 px-0 ">Hello there!👋🏽</h1>
+        <h1 className="my-10 px-0 ">Hello there!</h1>
         <h1 className="pt-2">
           I&apos;m Theodora, <br></br>A Software Engineer.
         </h1>

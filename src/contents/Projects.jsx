@@ -164,7 +164,7 @@ function Projects() {
         <h1 className="text-5xl font-bold text-white mb-3">My Projects</h1>
         <div className="w-20 h-1 bg-obsidian-400 mx-auto mb-4 rounded-full"></div>
         <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-          A collection of projects that showcase my technical skills, creativity,
+          A collection of some of my projects that showcase my technical skills, creativity,
           and commitment to building impactful digital solutions.
         </p>
       </div>

@@ -121,7 +121,7 @@ function Home() {
           <div className="bg-purple-100 w-full max-w-md shadow-lg rounded-lg py-2 px-4 mb-4 mx-auto">
             <LandingText />
             <h2 className="text-center font-semibold">
-              Great to have you take a look at my portfolio! 😊
+              Great to have you take a look at my portfolio! 
             </h2>
             <div className="flex items-center justify-center mt-2">
               <ResumeButton />
