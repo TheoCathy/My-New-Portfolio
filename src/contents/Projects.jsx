@@ -14,6 +14,7 @@ import img8 from "../assets/Images/TekkAISnap.png";
 import img9 from "../assets/Images/JetandShineSnap.png";
 import img10 from "../assets/Images/elvateImg.png";
 import img11 from "../assets/Images/Peacewatch.png";
+import img12 from "../assets/Images/cheers2evolving_img.png";
 import { FaExternalLinkAlt, FaGithub, FaRocket } from "react-icons/fa";
 
 function Projects() {
@@ -48,6 +49,16 @@ function Projects() {
       image: img9,
       isLive: true,
       tags: ["React", "Business", "Scalable", "Wordpress headless CMS"],
+    },
+    {
+      title: "Cheers To Evolving Website",
+      description:
+      "A Nigerian based lifestyle advisory brand focused on creating internal clarity — so individuals and institutions can build strategic infrastructure that leads to sustainable wealth and multigenerational legacy.",
+ 
+      link: "https://cheerstoevolving.com/",
+      image: img12,
+      isLive: true,
+      tags: ["Lifestyle", "Sacred growth", "Real estate", "Evolution Stores"],
     },
     {
       title: "Mben Health Services Website",
