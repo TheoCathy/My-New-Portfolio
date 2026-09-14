@@ -24,10 +24,10 @@ function Projects() {
   const projectList = [
    
    {
-      title: "TekkAI",
+      title: "TekkAI (Tekkdose)",
       description:
-      "An AI-powered product development platform that helps founders and product managers transform raw ideas into structured, investor-ready documentation. Built with React, TypeScript, and OpenAI API, the platform generates PRDs, FRDs, and visual HTML mockups from a single idea prompt. It also features a multi-stage Growth Planner that uses business context to deliver tailored growth strategies, a community hub, and a product health checklist tool  all wrapped in a responsive, modern interface.",
-      link: "https://tekkdoseai.netlify.app/",
+      "An AI-powered product development and CRM platform that helps founders and product managers transform raw ideas into structured, investor-ready documentation and MVPs, and alot more AI integrated features to come. This is all I can share about this product, however feel free to visit our mother site for a general overview of the company, its products and its offerings",
+      link: "https://tekkdose.co.uk/",
       image: img8,
       isLive: true,
       tags: ["React", "LLM", "Community", "AI App"],

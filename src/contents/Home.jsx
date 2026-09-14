@@ -12,7 +12,7 @@ import {
   FaHeart,
   FaChild,
   FaLaptopCode,
-  FaExternalLinkAlt 
+  FaExternalLinkAlt
 } from "react-icons/fa";
 import ResumeButton from "./Resume";
 import MyGallery from "./Gallery";
@@ -23,6 +23,7 @@ import aiPolicyImg from "../assets/Images/IMG_8493.PNG";
 import speakingImg from "../assets/Images/8df5cfde-3ea5-4565-905c-2d2b6fd4b9d1.jpg";
 import volunteerImg from "../assets/Images/IMG_7388.jpg";
 import mentorImg from "../assets/Images/IMG_7908.jpg";
+import CaThYImg from "../assets/Images/IMG_9970.jpg";
 
 function Home() {
   const currentYear = new Date().getFullYear();
@@ -121,7 +122,7 @@ function Home() {
           <div className="bg-purple-100 w-full max-w-md shadow-lg rounded-lg py-2 px-4 mb-4 mx-auto">
             <LandingText />
             <h2 className="text-center font-semibold">
-              Great to have you take a look at my portfolio! 
+              Great to have you take a look at my portfolio!
             </h2>
             <div className="flex items-center justify-center mt-2">
               <ResumeButton />
@@ -152,21 +153,38 @@ function Home() {
 
             <div className="text-neutral-900">
               <p className="text-lg leading-relaxed mb-4">
-                I am a software developer and researcher with a passion for
+                I am a full-stack developer and AI researcher with a passion for
                 building user-centered, impactful digital solutions. With
-                expertise in <strong>TypeScript, JavaScript, React, NextJs and NodeJS, PHP,</strong>{" "}
-                and <strong>SQL</strong>. I develop scalable web and mobile
+                expertise in <strong>TypeScript, JavaScript, React, Next.js, Node.js, PHP,</strong>{" "}
+                and <strong>SQL</strong>, I develop scalable web and mobile
                 applications that balance functionality with great user
-                experience.
+                experience as well as DevOp practices to ensure smooth deployment and maintenance.  Expertise in <strong>AWS </strong>
               </p>
               <p className="text-lg leading-relaxed mb-4">
                 My work is driven by a strong interest in{" "}
                 <strong>Artificial Intelligence</strong>, particularly in how it
                 can be used responsibly to improve accessibility, usability, and
-                everyday digital interactions to make the digital world more inclusive for everyone.
+                everyday digital interactions. My MSc research explored this
+                directly, building an LLM-powered system to detect and optimize
+                WCAG accessibility shortcomings in web interfaces, work that
+                continues to shape how I think about building inclusive
+                technology.
+              </p>
+              <p className="text-lg leading-relaxed mb-4">
+                Beyond development, I am actively engaged in the tech community
+                through speaking engagements where I share insights on AI,
+                accessibility, and emerging technologies. As a technical trainer
+                at TekkLab, I teach AI-focused product managers developer
+                workflows and responsible AI governance, and I founded Catch Them
+                Young (CaThY), a girls-in-STEM initiative introducing children
+                aged 8 to 14 to technology.
               </p>
               <p className="text-lg leading-relaxed">
-                Beyond development, I am actively engaged in the tech community through speaking engagements where I share insights on AI, accessibility, and emerging technologies. I am passionate about mentorship, supporting aspiring developers particularly women and underrepresented groups by guiding them through their learning and career journeys.
+                I am passionate about mentorship, supporting aspiring developers,
+                particularly women and underrepresented groups, through my
+                involvement with Women in Tech North East and ongoing bootcamp
+                mentoring, guiding them through their learning and career
+                journeys.
               </p>
 
               {/* Tech pills */}
@@ -181,6 +199,7 @@ function Home() {
                   "TypeScript",
                   "Next.js",
                   "Java",
+                  "AWS",
                   "WCAG",
                   "AI Ethics And Policy",
                 ].map((tech) => (
@@ -302,7 +321,11 @@ function Home() {
                 I actively contribute to the tech community through speaking
                 engagements where I share knowledge on AI, accessibility, and
                 emerging technologies. These experiences allow me to connect with
-                diverse audiences and promote inclusive innovation.
+                diverse audiences and promote inclusive innovation. <br /> <br /> 
+                I have also had the opportunity to attend and represent my company at the UN Global Dialogue on AI Governance. 
+                Established by the General Assembly within the United Nations, the dialogue provides an inclusive platform for Member States 
+                and relevant stakeholders to discuss international cooperation, share best practices and lessons learned, and support open,
+                 transparent, and inclusive discussions around AI governance.
               </p>
               <a
                 href="https://www.youtube.com/watch?v=k0q8J8bFVTA"
@@ -318,7 +341,31 @@ function Home() {
               </div>
             </div>
 
-            {/* 2. Professional Memberships Card */}
+            {/* 2. CaThY Card */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-dark shadow-lg hover:scale-[1.02] transition-transform flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-obsidian-600/30 flex items-center justify-center">
+                  <FaUsers className="text-obsidian-300 text-xl" />
+                </div>
+                <h3 className="text-2xl font-bold text-obsidian-300">
+                  Catch Them Young (CaThY) Initiative
+                </h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4 flex-grow">
+                CaThY is a girls-in-STEM
+                initiative I founded to introduce children aged 8 to 14 to
+                technology, building confidence and curiosity early, before the
+                gap in representation has a chance to take hold. <br /> <br />CaThY currently operates as a product under TekkLab, with a full
+                suite of branded print and event materials supporting workshops
+                and outreach. Looking ahead, we're exploring the path to
+                becoming an independent Community Interest Company (CIC), a move
+                that would let CaThY grow its own identity and reach beyond its
+                current home at TekkLab.
+              </p>
+              <div className="w-full h-56 rounded-xl overflow-hidden border border-dark bg-obsidian-900/20">
+                <img src={CaThYImg} alt="Volunteering" className="w-full h-full object-contain" />
+              </div>
+            </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-dark shadow-lg hover:scale-[1.02] transition-transform flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-obsidian-600/30 flex items-center justify-center">
@@ -356,7 +403,7 @@ function Home() {
               </div>
             </div>
 
-            {/* 3. Volunteering Card */}
+            {/* 4. Volunteering Card */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-dark shadow-lg hover:scale-[1.02] transition-transform flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-obsidian-600/30 flex items-center justify-center">
@@ -379,7 +426,7 @@ function Home() {
               </div>
             </div>
 
-            {/* 4. Mentorship Card */}
+            {/* 5. Mentorship Card */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-dark shadow-lg hover:scale-[1.02] transition-transform flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-obsidian-600/30 flex items-center justify-center">
